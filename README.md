@@ -1,5 +1,6 @@
 # AncientSouls
 
+[![Organization](https://img.shields.io/badge/organization-AncientSouls-lightgrey.svg)](https://github.com/AncientSouls)
 [![Join the chat at https://gitter.im/AncientSouls/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AncientSouls/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Potential for potential
