@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home - Documentation</title>
+    <title>funicular/src/lib/index.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,33 +29,42 @@
 
 <div id="main">
     
+    <h1 class="page-title">funicular/src/lib/index.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module ancient-funicular
+ */
 
+import Manager from './manager';
+import Item from './item';
 
+/**
+ * @name GlobalName
+ * @type {String}
+ * @description
+ * Name used in one instance of {@link Manager}.
+ */
 
+/**
+ * @name LocalName
+ * @type {String}
+ * Name used in one instance of {@link Item} for mark any child item as understood by an internal name.
+ */
 
-
-
-
-
-
-    
-
-
-    <section class="readme">
-        <article><h1>AncientSouls</h1><p><a href="https://gitter.im/AncientSouls/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/AncientSouls/Lobby"></a></p>
-<h2>Potential for potential</h2><p>We're idiots. We write systems not for result, but for the potential of the systems. We write the potential of systems for the sake of the potential of even larger systems.</p>
-<blockquote>
-<p>PS. After all, of all the potential of potential for potential in potential, we certainly get results, but it's... post factum.</p>
-</blockquote></article>
+export {
+  Manager,
+  Item,
+};</code></pre>
+        </article>
     </section>
-
-
 
 
 

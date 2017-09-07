@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home - Documentation</title>
+    <title>funicular/src/lib/manager.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,33 +29,73 @@
 
 <div id="main">
     
+    <h1 class="page-title">funicular/src/lib/manager.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import Item from './item';
 
-
-
-
-
-
-
-
-
+/**
+ * @class
+ * @memberof module:ancient-funicular
+ */
+class Manager {
+  
+  /**
+   * @constructs Manager
+   * @param {function} Item - class extended from Item
+   */
+  constructor(Item) {
     
+    /**
+     * @type {Object.&lt;GlobalName,Item>}
+     * @protected
+     * @description
+     * Contains last versions of registred named items by global names.
+     */
+    this._items = {};
+    
+    /**
+     * @type {function}
+     * @protected
+     */
+     this._Item = Item;
+    
+  }
+  
+  /**
+   * @param {string} name - If not sended, create new unnamed item.
+   * @param [query] - Preparation is responsible for responding to the query. It may, query can be required in your Item class. 
+   * @returns {Item}
+   * @description
+   * Responsible for:
+   * * Constructing new item, if not exists not remounted or unmounted item with equal name.
+   * * Register items as in {@link Manager#_items}
+   * > Attention! It is not a mount tool, only a search. Prepare and mount manually!
+   * @example
+   * var a = manager.get('a');
+   * a.name == 'a'; // true
+   */
+  get(name, query) {
+    if (name) {
+      if (this._items[name] &amp;&amp; !this._items[name].isReplaced &amp;&amp; !this._items[name].isUnmounted) return this._items[name];
+      else return (this._items[name] = new this._Item(this, name, query));
+    } else {
+      return new this._Item(this, name, query);
+    }
+  }
+  
+}
 
-
-    <section class="readme">
-        <article><h1>AncientSouls</h1><p><a href="https://gitter.im/AncientSouls/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/AncientSouls/Lobby"></a></p>
-<h2>Potential for potential</h2><p>We're idiots. We write systems not for result, but for the potential of the systems. We write the potential of systems for the sake of the potential of even larger systems.</p>
-<blockquote>
-<p>PS. After all, of all the potential of potential for potential in potential, we certainly get results, but it's... post factum.</p>
-</blockquote></article>
+export default Manager;</code></pre>
+        </article>
     </section>
-
-
 
 
 

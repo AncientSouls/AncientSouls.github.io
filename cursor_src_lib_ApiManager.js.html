@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home - Documentation</title>
+    <title>cursor/src/lib/ApiManager.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,33 +29,162 @@
 
 <div id="main">
     
+    <h1 class="page-title">cursor/src/lib/ApiManager.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import lodash from 'lodash';
 
+/**
+ * Interface for Api instance returnable from custom `adapterFindApi`.
+ * @interface Api
+ * @memberof module:ancient-cursor
+ */
 
+/**
+ * @function
+ * @memberof module:ancient-cursor
+ * @name Api#receiveQuery
+ * @param {UniqueId} channelId
+ * @param {Query} query
+ * @param {UniqueId} cursorId
+ * @param {Api~sendBundles} sendBundles
+ */
 
+/**
+ * @function
+ * @memberof module:ancient-cursor
+ * @name Api#channelDisconnected
+ * @param {UniqueId} channelId
+ * @param {Api~sendBundles} sendBundles
+ */
 
+/**
+ * @function
+ * @memberof module:ancient-cursor
+ * @name Api#cursorDestroyed
+ * @param {UniqueId} channelId
+ * @param {UniqueId} cursorId
+ * @param {Api~sendBundles} sendBundles
+ */
 
+/**
+ * @callback ApiManager~sendBundles
+ * @memberof module:ancient-cursor
+ * @param {UniqueId} channelId
+ * @param {Bundle[]} bundles
+ */
 
+/**
+ * Manager of many api for sync data with cursors.
+ * @class
+ * @memberof module:ancient-cursor
+ */
+class ApiManager {
+  
+  /**
+   * @constructs ApiManager
+   * @param {ApiManager~adapterFindApi} adapterFindApi
+   * @param {ApiManager~adapterSend} adapterSend
+   */
+  constructor(adapterFindApi, adapterSend) {
+    this.adapterFindApi = adapterFindApi;
+    this.adapterSend = adapterSend;
+    this.relations = {};
+  }
 
-
-
+  /**
+   * Find api object.
+   * @param {Query} apiQuery
+   * @returns {Promise} - {@link ApiObject}
+   */
+  findApi(apiQuery) {
+    return this.adapterFindApi(apiQuery);
+  }
+  
+  /**
+   * Receive some query from some channelId, with possible need to sync result with some cursorId on channel cursors namespace.
+   * @param {UniqueId} channelId
+   * @param {Query} apiQuery
+   * @param {Query} query
+   * @param {UniqueId} cursorId
+   * @returns {Promise} - {@link ApiObject}
+   */
+  receiveQuery(channelId, apiQuery, query, cursorId) {
+    return this.findApi(apiQuery).then((api) => {
+      lodash.set(this.relations, [channelId, cursorId], apiQuery);
+      api.receiveQuery(
+        channelId, query, cursorId,
+        (channelId, bundles) => {
+          this.adapterSend(channelId, bundles);
+        }
+      );
+      return api;
+    });
+  }
+  
+  /**
+   * Call channelDisconnected method apply cursorDestroyed for each cursor used in current channelId.
+   * @param {UniqueId} channelId
+   */
+  channelDisconnected(channelId) {
+    var cursors = lodash.get(this.relations, [channelId]);
     
+    var promises = [];
+    for (var cursorId in cursors) {
+      promises.push(((channelId, cursorId) => {
+        return new Promise(() => this.cursorDestroyed(channelId, cursorId));
+      })(channelId, cursorId));
+    }
 
+    return promises;
+  }
+  
+  /**
+   * Call cursorDestroyed method into api serving for current cursor sync.
+   * @param {UniqueId} channelId
+   * @param {UniqueId} cursorId
+   */
+  cursorDestroyed(channelId, cursorId) {
+    var apiQuery = lodash.get(this.relations, [channelId, cursorId]);
+    return this.findApi(apiQuery).then((api) => {
+      api.cursorDestroyed(
+        channelId, cursorId,
+        (channelId, bundles) => {
+          this.adapterSend(channelId, bundles);
+        }
+      );
+    });
+  }
+}
 
-    <section class="readme">
-        <article><h1>AncientSouls</h1><p><a href="https://gitter.im/AncientSouls/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/AncientSouls/Lobby"></a></p>
-<h2>Potential for potential</h2><p>We're idiots. We write systems not for result, but for the potential of the systems. We write the potential of systems for the sake of the potential of even larger systems.</p>
-<blockquote>
-<p>PS. After all, of all the potential of potential for potential in potential, we certainly get results, but it's... post factum.</p>
-</blockquote></article>
+/**
+ * @callback ApiManager~adapterFindApi
+ * @memberof module:ancient-cursor
+ * @param {Query} apiQuery
+ * @returns {Promise} - {@link ApiObject}
+ * @description
+ * Must be sended into `ApiManager` into constructor. Used for found api instance by apiQuery, from custom application storage logic.
+ */
+
+/**
+ * @callback ApiManager~adapterSend
+ * @memberof module:ancient-cursor
+ * @param {UniqueId} channelId
+ * @param {Bundle[]} bundles
+ * @description
+ * Must be sended into `ApiManager` into constructor. Used for send bundles from api to cursor into current and channelId within custom application logic.
+ */
+
+export default ApiManager;</code></pre>
+        </article>
     </section>
-
-
 
 
 

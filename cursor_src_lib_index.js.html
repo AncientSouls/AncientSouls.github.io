@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home - Documentation</title>
+    <title>cursor/src/lib/index.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,33 +29,93 @@
 
 <div id="main">
     
+    <h1 class="page-title">cursor/src/lib/index.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module ancient-cursor
+ */
 
+import repl from 'repl';
+import lodash from 'lodash';
+import EventEmitter from 'events';
 
+import { Cursor } from './Cursor';
+import { BundlesQueue } from './BundlesQueue';
+import { CursorsManager } from './CursorsManager';
+import { ApiManager } from './ApiManager';
 
+export {
+  Cursor,
+  BundlesQueue,
+  CursorsManager,
+  ApiManager,
+};
 
+/**
+ * @typedef {Object} Bundle
+ * @property {number} cursor - id of cursor on current client
+ * @property {string} type - set, unset or splice string
+ * @property {string|string[]} path
+ * @property {*=} value - if used set type
+ * @property {number} start - if used splice type
+ * @property {number} deleteCount - if used splice type
+ * @property {Array} items - if used splice type
+ */
 
+/**
+ * Attention! If the executers object does not have the correct executer type, an error will be thrown.
+ * @param {Bundle} bundle
+ * @param {Object} executers
+ * @param {parseBundle~parser} executers.* - executers for each possible bundle
+ * @param {Cursor} cursor
+ * @throws Uncaught TypeError: executers[bundle.type] is not a function
+ */
+export function executeBundle(bundle, cursor, executers) {
+  executers[bundle.type](bundle, cursor);
+}
 
+/**
+ * @param {Bundle} bundle
+ * @param {Cursor} cursor
+ */
+export function executeBundleSet(bundle, cursor) {
+  cursor.set(bundle.path, bundle.value);
+}
 
+/**
+ * @param {Bundle} bundle
+ * @param {Cursor} cursor
+ */
+export function executeBundleUnset(bundle, cursor) {
+  cursor.set(bundle.path, undefined);
+}
 
+/**
+ * @param {Bundle} bundle
+ * @param {Cursor} cursor
+ */
+export function executeBundleSplice(bundle, cursor) {
+  cursor.splice(bundle.path, bundle.start, bundle.deleteCount, ...bundle.items);
+}
 
-    
-
-
-    <section class="readme">
-        <article><h1>AncientSouls</h1><p><a href="https://gitter.im/AncientSouls/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/AncientSouls/Lobby"></a></p>
-<h2>Potential for potential</h2><p>We're idiots. We write systems not for result, but for the potential of the systems. We write the potential of systems for the sake of the potential of even larger systems.</p>
-<blockquote>
-<p>PS. After all, of all the potential of potential for potential in potential, we certainly get results, but it's... post factum.</p>
-</blockquote></article>
+/**
+ * Default executers object.
+ */
+export var executers = {
+  set: executeBundleSet,
+  unset: executeBundleUnset,
+  splice: executeBundleSplice,
+};</code></pre>
+        </article>
     </section>
-
-
 
 
 
