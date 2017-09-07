@@ -1,0 +1,12 @@
+[submodule "doc"]
+	path = doc
+	url = https://github.com/AncientSouls/AncientSouls.github.io.git
+	branch = master
+[submodule "cursor"]
+	path = submodules/cursor
+	url = https://github.com/AncientSouls/Cursor.git
+	branch = master
+[submodule "funicular"]
+	path = submodules/funicular
+	url = https://github.com/AncientSouls/Funicular.git
+	branch = master

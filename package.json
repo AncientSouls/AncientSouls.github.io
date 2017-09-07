@@ -1,0 +1,9 @@
+{
+	"devDependencies": {
+		"jsdoc": "^3.4.0",
+		"minami": "^1.1.1"
+	},
+	"scripts": {
+		"jsdoc": "git submodule update --remote --init --recursive -f && cd ./doc && git checkout master && cd ../ && npm i && rm -f -r ./doc/*/ && find ./doc ! -name '.git' -type f -exec rm -rf {} + && jsdoc ./submodules/*/src ./README.md -r -d ./doc -t ./node_modules/minami  -c ./jsdoc.conf.json -u ./tutorials"
+	}
+}
