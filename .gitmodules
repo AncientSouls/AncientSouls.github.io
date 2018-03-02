@@ -1,0 +1,16 @@
+[submodule "packages/cursor"]
+	path = packages/cursor
+	url = git@github.com:AncientSouls/Cursor.git
+	branch = dev
+[submodule "packages/channels"]
+	path = packages/channels
+	url = git@github.com:AncientSouls/Channels.git
+	branch = dev
+[submodule "packages/peer"]
+	path = packages/peer
+	url = git@github.com:AncientSouls/Peer.git
+	branch = dev
+[submodule "packages/funicular"]
+	path = packages/funicular
+	url = git@github.com:AncientSouls/Funicular.git
+	branch = dev
