@@ -49,10 +49,6 @@ npm run dev-normalize
 npm run dev-doc
 ```
 
-# Update universal parts of packages
-npm run dev-check && npm run dev-normalize && npm run dev-doc
-```
-
 > Calling all sequentially identical with: `npm run dev-init`
 
 ### Local package scripts
