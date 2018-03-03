@@ -4,12 +4,14 @@
   "repository": "AncientSouls/AncientSouls.github.io",
   "license": "MIT",
   "scripts": {
-    "dev-init": "git submodule init && git submodule update && npm run dev-install-all && npm run dev-tslint && npm run dev-tsc && npm run dev-test",
+    "dev-init": "git submodule init && git submodule update && npm run dev-install && npm run dev-check",
+    "dev-check": "npm run dev-tslint && npm run dev-tsc && npm test",
+    "dev-build": "npm run dev-check && npm run dev-normalize && npm run dev-doc",
     "dev-install": "bash ./dev-install-all.sh",
     "dev-normalize": "bash ./dev-normalize.sh",
     "dev-tsc": "bash ./dev-tsc.sh",
     "dev-tslint": "tslint -c tslint.json './packages/**/src/**/*.ts'",
-    "dev-doc": "find ./doc/ ! -name '.git' ! -name 'doc' -exec rm -rf {} + && typedoc --name \"AncientSouls Documentation\" --module commonjs --out ./doc/ --mode file --excludeExternals --externalPattern \"**/node_modules/**\" --exclude \"**/node_modules/**\" --disableOutputCheck --ignoreCompilerErrors ./packages",
+    "dev-doc": "bash ./dev-doc.sh",
     "test": "for d in ./packages/* ; do cd \"$d\" && npm run test && cd ../../; done"
   },
   "devDependencies": {
@@ -17,6 +19,7 @@
     "tslint-config-airbnb": "^5.7.0",
     "tslint-eslint-rules": "^5.1.0",
     "typedoc": "^0.10.0",
+    "typedoc-plugin-markdown": "^1.0.14",
     "typescript": "^2.7.2"
   }
 }
