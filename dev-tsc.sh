@@ -1,0 +1,5 @@
+(cd ./packages/ancient-mixins; npm run tsc)
+(cd ./packages/ancient-cursor; npm run tsc)
+(cd ./packages/ancient-channels; npm run tsc)
+(cd ./packages/ancient-peer; npm run tsc)
+(cd ./packages/ancient-funicular; npm run tsc)

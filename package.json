@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "bugs": "https://github.com/AncientSouls/AncientSouls.github.io/issues",
+  "repository": "AncientSouls/AncientSouls.github.io",
+  "license": "MIT",
+  "scripts": {
+    "dev-init": "git submodule init && git submodule update && npm run dev-install-all && npm run dev-tslint && npm run dev-tsc && npm run dev-test",
+    "dev-install": "bash ./dev-install-all.sh",
+    "dev-tsc": "bash ./dev-tsc.sh",
+    "dev-tslint": "tslint -c tslint.json './packages/**/src/**/*.ts'",
+    "dev-doc": "find ./doc/ ! -name '.git' ! -name 'doc' -exec rm -rf {} + && typedoc --module commonjs --out ./doc/ ./packages --mode file --disableOutputCheck",
+    "test": "for d in ./packages/* ; do cd \"$d\" && npm run test && cd ../../; done"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.48",
+    "mocha": "^5.0.1",
+    "chai": "^4.1.2",
+    "sinon": "^4.4.2",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.7.0",
+    "tslint-eslint-rules": "^5.1.0",
+    "typedoc": "^0.10.0",
+    "source-map-support": "^0.5.3",
+    "typescript": "^2.7.2"
+  }
+}
