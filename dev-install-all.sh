@@ -2,6 +2,7 @@ npm install
 
 for m in ./packages/*
 do
+(cd $m && npm i)
 npm link $m
 done
 
