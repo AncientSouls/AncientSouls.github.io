@@ -2,7 +2,7 @@ npm install
 
 for m in ./packages/*
 do
-(cd $m && npm i)
+(cd $m && git checkout dev && npm i)
 npm link $m
 done
 
