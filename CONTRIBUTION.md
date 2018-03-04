@@ -1,93 +1,49 @@
 # How to Contribute
 
-## Workflow
+## Automation
 
-### Init
+- any commits tests localy current package with `npm run pkg-test`
+- in `dev`, `release` and `master` commits tests in dev environment with `npm run dev-test`
+- in `master` commits also call auto publishing
+
+## Branches
+
+- `master` only for pull requests commits equal with release one version, accepts changes only from `release` branch
+- `release` for prepare package to publish (package.json version changes, merge from `master` and from `dev`)
+- `dev` for for hot development and gettings pull from other branches
+
+## Simple sequence
 
 ```sh
 git clone git@github.com:AncientSouls/AncientSouls.github.io.git dev && cd dev
-npm run dev-init
-```
 
-> This operation can be safely repeated many times. If no changes were made to the packages, there should be nothing to commit after it command has been executed.
+# Operations on the dev environment
 
-### Global dev scripts
+# Safely repetitive operations
+npm run dev-init # install all npm deps, load all packages from dev branch, compile, lint and test all packages
+npm run dev-install # npm install && npm run dev-install-packages && npm run dev-set-links && npm run dev-use-links (install all deps for all packages, link all ancient packages together)
+npm run dev-check # lint, compile, test all packages
+npm run dev-tslint # lint all packages
+npm run dev-tsc # compile all packages
+npm run dev-test # test all packages
 
-```sh
-# Install packages dependencies, and link with each other, for convenient development
-npm run dev-install
-```
+# Not safe, change the packages operations
+npm run dev-build # dev-check, dev-normalize, dev-doc
+npm run dev-normalize # copies the same .travis and sh packages to all packages
+npm run dev-doc # regenerate ./doc and ./package/*/doc, changes to file names are inevitable
 
-```sh
-# Check tslint, recompile typescript, run tests
-npm run dev-check
+# Not safe, commits
+M="message" npm run dev-all-acp # if has changes, add, commit and push all with message into all repositories includes root dev repository (without doc submodule in root)
 
-# or:
+# Tips and helpers
 
-# Lint all packages
-npm run dev-tslint
+# useful cicle for apply sh to packages
+for p in ./packages/* ; do (cd $p && your-command); done
 
-# Recompile all packages from src to lib and tasks directories
-npm run dev-tsc
+# Operations on the one package
 
-# Run compiled tests for all packages
-npm test
-```
-
-```sh
-# Build for push and publish
-npm run dev-build
-
-# or:
-
-npm run dev-check
-
-# Copy standard .gitignore and .npmignore files
-npm run dev-normalize
-
-# Generate html ./doc and markdown ./package/package-name/doc documentations
-npm run dev-doc
-```
-
-> Calling all sequentially identical with: `npm run dev-init`
-
-### Local package scripts
-
-```sh
-# Go into
-cd packages/ancient-mixins
-
-# Install all one package dependencies
-npm i
-
-# Recompile package from src to lib and tasks directories
-npm run tsc
-
-# Run compiled tests for package
-npm test
-```
-
-> All packages can be cloned and development alone, or inside dev environment.
-
-### Tips
-
-#### Autom
-
-```sh
-# add, commit and push dev repo and all packages (if has something to add, commit and push)
-M="message" npm run dev-all-acp
-# attempt! you must build before
-```
-
-#### Manual
-
-```sh
-# add, commit and push dev environment
-git add . -A && git commit -m "message" && git push
-
-# add, commit and push generated doc
-(cd doc && git add . -A && git commit -m "message" && git push)
-
-# add, commit and push all packages
-for d in ./packages/* ; do (cd $d && git add . -A && git commit -m "message" && git push); done
+npm run tsc # compile ./src/lib and ./src/tests to ./lib and ./tests
+npm run test # run tests only for current package
+npm run dev-test # clone dev env into ./.dev directory, and dev-init it but relink current package for use it for other packages (dev env clone all packages last dev branch versions for test)
+npm run dev-link # use npm link for needed to this package ancient-* dependencies
 ```

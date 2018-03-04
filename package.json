@@ -5,15 +5,18 @@
   "license": "MIT",
   "scripts": {
     "dev-init": "git submodule init && git submodule update && npm run dev-install && npm run dev-check",
-    "dev-check": "npm run dev-tslint && npm run dev-tsc && npm test",
+    "dev-check": "npm run dev-tslint && npm run dev-tsc && npm run dev-test",
     "dev-build": "npm run dev-check && npm run dev-normalize && npm run dev-doc",
-    "dev-install": "bash ./dev-install-all.sh",
-    "dev-normalize": "bash ./dev-normalize.sh",
+    "dev-install": "npm install && npm run dev-install-packages && npm run dev-set-links && npm run dev-use-links",
+    "dev-install-packages": "for p in ./packages/*; do (cd $p && npm i); done",
+    "dev-set-links": "for p in ./packages/*; do npm link $p; done",
+    "dev-use-links": "for p in ./packages/*; do (cd \"$d\" && npm run dev-link); done",
+    "dev-normalize": "for p in ./packages/*; do cp ./normalize/* $p/; done",
     "dev-tsc": "bash ./dev-tsc.sh",
     "dev-tslint": "tslint -c tslint.json './packages/**/src/**/*.ts'",
     "dev-doc": "bash ./dev-doc.sh",
     "dev-all-acp": "git add . -A && git commit -m \"$M\" && git push && for d in ./packages/* ; do (cd $d && git add . -A && git commit -m \"$M\" && git push); done",
-    "test": "for d in ./packages/* ; do (cd \"$d\" && npm run test); done"
+    "dev-test": "for d in ./packages/* ; do (cd \"$d\" && npm run test); done"
   },
   "devDependencies": {
     "tslint": "^5.9.1",

@@ -12,5 +12,10 @@ os:
   - linux
   - osx
 
+install:
+  - npm install
+  - npm run dev-test
+
 script:
-  - npm run dev-init
+  - npm run tsc
+  - npm run test
