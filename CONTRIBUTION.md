@@ -71,6 +71,16 @@ npm test
 
 ### Tips
 
+#### Autom
+
+```sh
+# add, commit and push dev repo and all packages (if has something to add, commit and push)
+M="message" npm run dev-all-acp
+# attempt! you must build before
+```
+
+#### Manual
+
 ```sh
 # add, commit and push dev environment
 git add . -A && git commit -m "message" && git push
