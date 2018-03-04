@@ -10,13 +10,13 @@
     "dev-install": "npm install && npm run dev-install-packages && npm run dev-set-links && npm run dev-use-links",
     "dev-install-packages": "for p in ./packages/*; do (cd $p && npm i); done",
     "dev-set-links": "for p in ./packages/*; do npm link $p; done",
-    "dev-use-links": "for p in ./packages/*; do (cd \"$d\" && npm run dev-link); done",
+    "dev-use-links": "for p in ./packages/*; do (cd \"$p\" && npm run dev-link); done",
     "dev-normalize": "for p in ./packages/*; do cp ./normalize/* $p/; done",
     "dev-tsc": "bash ./dev-tsc.sh",
     "dev-tslint": "tslint -c tslint.json './packages/**/src/**/*.ts'",
     "dev-doc": "bash ./dev-doc.sh",
-    "dev-all-acp": "git add . -A && git commit -m \"$M\" && git push && for d in ./packages/* ; do (cd $d && git add . -A && git commit -m \"$M\" && git push); done",
-    "dev-test": "for d in ./packages/* ; do (cd \"$d\" && npm run test); done"
+    "dev-all-acp": "git add . -A && git commit -m \"$M\" && git push && for p in ./packages/* ; do (cd $p && git add . -A && git commit -m \"$M\" && git push); done",
+    "dev-test": "for p in ./packages/* ; do (cd \"$p\" && npm run test); done"
   },
   "devDependencies": {
     "tslint": "^5.9.1",
