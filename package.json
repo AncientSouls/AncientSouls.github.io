@@ -11,7 +11,7 @@
     "dev-install-packages": "for p in ./packages/*; do (cd $p && npm i); done",
     "dev-set-links": "for p in ./packages/*; do npm link $p; done",
     "dev-use-links": "for p in ./packages/*; do (cd \"$p\" && npm run dev-link); done",
-    "dev-normalize": "for p in ./packages/*; do cp ./normalize/* $p/; done",
+    "dev-normalize": "for p in ./packages/*; do cp -a ./normalize/. $p/; done",
     "dev-tsc": "bash ./dev-tsc.sh",
     "dev-tslint": "tslint -c tslint.json './packages/**/src/**/*.ts'",
     "dev-doc": "bash ./dev-doc.sh",
