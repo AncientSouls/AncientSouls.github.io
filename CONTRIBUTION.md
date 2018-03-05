@@ -2,15 +2,16 @@
 
 ## Automation
 
-- any commits tests localy current package with `npm run pkg-test`
-- in `dev`, `release` and `master` commits tests in dev environment with `npm run dev-test`
-- in `master` commits also call auto publishing
+- any commits tests localy current package with `npm run dev-test`
+- in `master` commits call auto npm publishing
 
 ## Branches
 
+We use default git-flow branch names.
+
 - `master` only for pull requests commits equal with release one version, accepts changes only from `release` branch
-- `release` for prepare package to publish (package.json version changes, merge from `master` and from `dev`)
-- `dev` for for hot development and gettings pull from other branches
+- `release` for prepare package to publish (package.json version changes, merge from `master` and from `develop`)
+- `develop` for for hot development and gettings pull from other branches
 
 ## Simple sequence
 

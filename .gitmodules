@@ -1,23 +1,23 @@
 [submodule "packages/ancient-mixins"]
 	path = packages/ancient-mixins
 	url = https://github.com/AncientSouls/Mixins.git
-	branch = dev
+	branch = develop
 [submodule "packages/ancient-cursor"]
 	path = packages/ancient-cursor
 	url = https://github.com/AncientSouls/Cursor.git
-	branch = dev
+	branch = develop
 [submodule "packages/ancient-channels"]
 	path = packages/ancient-channels
 	url = https://github.com/AncientSouls/Channels.git
-	branch = dev
+	branch = develop
 [submodule "packages/ancient-peer"]
 	path = packages/ancient-peer
 	url = https://github.com/AncientSouls/Peer.git
-	branch = dev
+	branch = develop
 [submodule "packages/ancient-funicular"]
 	path = packages/ancient-funicular
 	url = https://github.com/AncientSouls/Funicular.git
-	branch = dev
+	branch = develop
 [submodule "doc"]
 	path = doc
 	url = https://github.com/AncientSouls/AncientSouls.github.io.git
