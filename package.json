@@ -15,7 +15,7 @@
     "dev-tsc": "bash ./dev-tsc.sh",
     "dev-tslint": "tslint -c tslint.json './packages/**/src/**/*.ts'",
     "dev-doc": "bash ./dev-doc.sh",
-    "dev-all-acp": "git add . -A && git commit -m \"$M\" && git push && for p in ./packages/* ; do (cd $p && git add . -A && git commit -m \"$M\" && git push); done",
+    "dev-all-acp": "git add . -A && git commit -m \"$M\" && git push --all origin && for p in ./packages/* ; do (cd $p && git add . -A && git commit -m \"$M\" && git push --all origin); done",
     "dev-test": "for p in ./packages/* ; do (cd \"$p\" && echo \"$p\" && npm run test); done"
   },
   "devDependencies": {
