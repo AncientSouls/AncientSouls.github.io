@@ -25,19 +25,19 @@ Creating modules with the widest possible application potential.
 ### Comparison
 Existing systems vs possible assemblies based on our abstractions.
 
-- meteor.js subscribe/publish = [https://github.com/AncientSouls/Peer](Peer)+[https://github.com/AncientSouls/Channels](Channels)+[https://github.com/AncientSouls/Cursor](Cursor) (80%) + adapters (20%)
-- webpack = [https://github.com/AncientSouls/Funicular](Funicular)+[https://github.com/AncientSouls/Cursor](Cursor) (80%) + adapters (20%)
-- react = [https://github.com/AncientSouls/Funicular](Funicular)+[https://github.com/AncientSouls/Cursor](Cursor) (50%) + dom/string generator
-- meteor.js minimongo = [https://github.com/AncientSouls/Cursor](Cursor) + mingo
-- meteor.js methods = [https://github.com/AncientSouls/Peer](Peer)+[https://github.com/AncientSouls/Channels](Channels)+[https://github.com/AncientSouls/Cursor](Cursor) (95%)
+- meteor.js subscribe/publish = (Peer)[https://github.com/AncientSouls/Peer]+(Channels)[https://github.com/AncientSouls/Channels]+(Cursor)[https://github.com/AncientSouls/Cursor] (80%) + adapters (20%)
+- webpack = (Funicular)[https://github.com/AncientSouls/Funicular]+(Cursor)[https://github.com/AncientSouls/Cursor] (80%) + adapters (20%)
+- react = (Funicular)[https://github.com/AncientSouls/Funicular]+(Cursor)[https://github.com/AncientSouls/Cursor] (50%) + dom/string generator
+- meteor.js minimongo = (Cursor)[https://github.com/AncientSouls/Cursor] + mingo
+- meteor.js methods = (Peer)[https://github.com/AncientSouls/Peer]+(Channels)[https://github.com/AncientSouls/Channels]+(Cursor)[https://github.com/AncientSouls/Cursor] (95%)
 
 ### Road
 
-- [https://github.com/AncientSouls/Cursor](Cursor) - Abstract container of data synchronization.
-- [https://github.com/AncientSouls/Channels](Channels) - Abstract modular channels concept.
+- (Cursor)[https://github.com/AncientSouls/Cursor] - Abstract container of data synchronization.
+- (Channels)[https://github.com/AncientSouls/Channels] - Abstract modular channels concept.
   - Still need to create many adapters for popular communication protocols.
-- [https://github.com/AncientSouls/Peer](Peer) - Friendly core of interaction of peers.
-- [https://github.com/AncientSouls/Funicular](Funicular) - Abstract hierarchical life cycle of the mount.
+- (Peer)[https://github.com/AncientSouls/Peer] - Friendly core of interaction of peers.
+- (Funicular)[https://github.com/AncientSouls/Funicular] - Abstract hierarchical life cycle of the mount.
   - Still need to create adapters for specific formats of executable data (js / css / html / static ... + compilatable formats as coffee / ts ...)
 - Coming soon: SQL tracking of change of SELECT results, without client data meaning
 - Coming soon: SQL graph store model (based on many models as nested sets and others...) with support recursives and multiparents, may be adaptive to data... may be
