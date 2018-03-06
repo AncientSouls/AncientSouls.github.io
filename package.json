@@ -6,7 +6,7 @@
   "scripts": {
     "dev-init": "git submodule init && git submodule update && (for p in ./packages/*; do (cd \"$p\" && git checkout develop); done) && npm run dev-install && npm run dev-check",
     "dev-check": "npm run dev-tslint && npm run dev-tsc && npm run dev-test",
-    "dev-build": "npm run dev-check && npm run dev-normalize && npm run dev-docs",
+    "dev-build": "npm run dev-check && npm run dev-normalize && npm run dev-doc",
     "dev-install": "npm install && npm run dev-install-packages && npm run dev-set-links && npm run dev-use-links",
     "dev-install-packages": "for p in ./packages/*; do (cd $p && npm i); done",
     "dev-set-links": "for p in ./packages/*; do npm link $p; done",
@@ -15,8 +15,6 @@
     "dev-tsc": "(cd ./packages/ancient-mixins; npm run tsc) && (cd ./packages/ancient-cursor; npm run tsc) && (cd ./packages/ancient-channels; npm run tsc) && (cd ./packages/ancient-peer; npm run tsc) && (cd ./packages/ancient-funicular; npm run tsc)",
     "dev-tslint": "for p in ./packages/*; do (cd \"$p\" && npm run tslint); done",
     "dev-doc": "find ./doc/ ! -name '.git' ! -name 'doc' -exec rm -rf {} + && typedoc --readme ./README.md --name \"AncientSouls Documentation\" --module commonjs --out ./doc/ --excludeExternals --exclude \"**/+(node_modules|tests)/**\" --disableOutputCheck --ignoreCompilerErrors --includes includes ./packages",
-    "dev-doc-packages": "for p in ./packages/*; do rm -rf $p/doc && node_modules/.bin/typedoc --readme $p/README.md --theme markdown --module commonjs --out $p/doc --mode file --exclude \"**/+(node_modules|tests)/**\" --disableOutputCheck --ignoreCompilerErrors $p; done",
-    "dev-docs": "npm run dev-doc && npm run dev-doc-packages",
     "dev-all-acp": "for p in ./packages/* ; do (cd $p && git add . -A && git commit -m \"$M\" && git push --all origin); done && git add . -A && git commit -m \"$M\" && git push --all origin && (cd doc && git add . -A && git commit -m \"$M\" && git push --all origin)",
     "dev-test": "for p in ./packages/* ; do (cd \"$p\" && echo \"$p\" && npm run test); done"
   },
