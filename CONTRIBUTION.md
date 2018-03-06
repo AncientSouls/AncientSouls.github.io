@@ -47,6 +47,7 @@ for p in ./packages/* ; do (cd $p && your-command); done
 
 npm run tsc # compile ./src/lib and ./src/tests to ./lib and ./tests
 npm run test # run tests only for current package
+npm run tslint # run tslint only for current package
 npm run dev-test # clone dev env into ./.dev directory, and dev-init it but relink current package for use it for other packages (dev env clone all packages last dev branch versions for test)
 npm run dev-link # use npm link for needed to this package ancient-* dependencies
 ```
