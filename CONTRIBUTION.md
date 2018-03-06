@@ -31,12 +31,12 @@ npm run dev-test # test all packages
 # Not safe, change the packages operations
 npm run dev-build # dev-check, dev-normalize, dev-docs
 npm run dev-normalize # copies the same .travis and sh packages to all packages
-npm run dev-s # regenerate ./s
-npm run dev-s-packages # regenerate ./package/*/s
+npm run dev-doc # regenerate ./doc
+npm run dev-doc-packages # regenerate ./package/**/doc
 npm run dev-docs # dev-s and dev-s-packages
 
 # Not safe, commits
-M="message" npm run dev-all-acp # if has changes, add, commit and push all with message into all repositories includes root dev repository (without s submodule in root)
+M="message" npm run dev-all-acp # if has changes, add, commit and push all with message into all repositories includes root dev and doc repository
 
 # Tips and helpers
 
