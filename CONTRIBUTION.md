@@ -16,7 +16,7 @@ We use default git-flow branch names.
 ## Simple sequence
 
 ```sh
-git clone git@github.com:AncientSouls/AncientSouls.github.io.git dev && cd dev
+git clone -b dev git@github.com:AncientSouls/AncientSouls.github.io.git dev && cd dev
 
 # Operations on the dev environment
 
