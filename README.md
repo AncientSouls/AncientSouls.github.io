@@ -19,8 +19,9 @@ We believe that having such opportunities, we can start and create, potentially,
 Creating modules with the widest possible application potential.
 
 - If subscribing to changes, then without dependence on the method, protocol or data structure, with the ability to determine these factors is absolutely free.
-- If the communication system is applicable for the transmission of any type of content, with any degree of synchronization and using any communication protocol, the same one programm interface.
-- If the mounting concept, then fully reactively, without dependence to language, source type or execution platform
+- If it is the communication system, it should be independent from content type, free in way of synchronisation and it should be able to use any communication protocol, using same program interface in any case.
+- If the mounting concept, then fully reactively, without dependence to language, source type or execution platform.
+- It should not contain built-in, non-replaceable functionality. Completely disassemblable and re-assemblable on prodaction usage.
 
 ### Comparison
 Existing systems vs possible assemblies based on our abstractions.
@@ -30,17 +31,6 @@ Existing systems vs possible assemblies based on our abstractions.
 - react = [Funicular](https://github.com/AncientSouls/Funicular)+[Cursor](https://github.com/AncientSouls/Cursor) (50%) + dom/string generator
 - meteor.js minimongo = [Cursor](https://github.com/AncientSouls/Cursor) + mingo
 - meteor.js methods = [Peer](https://github.com/AncientSouls/Peer)+[Channels](https://github.com/AncientSouls/Channels)+[Cursor](https://github.com/AncientSouls/Cursor) (95%)
-
-### Road
-
-- [Cursor](https://github.com/AncientSouls/Cursor) - Abstract container of data synchronization.
-- [Channels](https://github.com/AncientSouls/Channels) - Abstract modular channels concept.
-  - Still need to create many adapters for popular communication protocols.
-- [Peer](https://github.com/AncientSouls/Peer) - Friendly core of interaction of peers.
-- [Funicular](https://github.com/AncientSouls/Funicular) - Abstract hierarchical life cycle of the mount.
-  - Still need to create adapters for specific formats of executable data (js / css / html / static ... + compilatable formats as coffee / ts ...)
-- Coming soon: SQL tracking of change of SELECT results, without client data meaning
-- Coming soon: SQL graph store model (based on many models as nested sets and others...) with support recursives and multiparents, may be adaptive to data... may be
 
 ### We invite you!
 
