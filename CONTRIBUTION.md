@@ -2,7 +2,7 @@
 
 ## Automation
 
-- any commits tests localy current package with `npm run dev-test`
+- any commits tests localy current package with `npm run test`
 - in `master` commits call auto npm publishing
 
 ## Branches
@@ -21,7 +21,7 @@ git clone -b dev git@github.com:AncientSouls/AncientSouls.github.io.git dev && c
 # Operations on the dev environment
 
 # Safely repetitive operations
-npm run dev-init # install all npm deps, load all packages from dev branch, compile, lint and test all packages
+B="develop" npm run dev-init # install all npm deps, load all packages from D branch/commit/tag, compile, lint and test all packages
 npm run dev-install # npm install && npm run dev-install-packages && npm run dev-set-links && npm run dev-use-links (install all deps for all packages, link all ancient packages together)
 npm run dev-check # lint, compile, test all packages
 npm run dev-tslint # lint all packages
