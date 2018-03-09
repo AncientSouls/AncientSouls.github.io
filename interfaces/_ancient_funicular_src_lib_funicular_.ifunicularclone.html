@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IFunicularEventListener | AncientSouls Documentation</title>
+	<title>IFunicularClone | AncientSouls Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/_ancient_funicular_src_lib_funicular_.html">&quot;ancient-funicular/src/lib/funicular&quot;</a>
 				</li>
 				<li>
-					<a href="_ancient_funicular_src_lib_funicular_.ifuniculareventlistener.html">IFunicularEventListener</a>
+					<a href="_ancient_funicular_src_lib_funicular_.ifunicularclone.html">IFunicularClone</a>
 				</li>
 			</ul>
-			<h1>Interface IFunicularEventListener</h1>
+			<h1>Interface IFunicularClone</h1>
 		</div>
 	</div>
 </header>
@@ -71,29 +71,29 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IFunicularEventListener</span>
+						<span class="target">IFunicularClone</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3 class="tsd-before-signature">Callable</h3>
 				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_ancient_funicular_src_lib_funicular_.ifuniculareventdata.html" class="tsd-signature-type">IFunicularEventData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>instance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IInstance</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IInstance</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/AncientSouls/Funicular/blob/cd638d7/src/lib/funicular.ts#L38">ancient-funicular/src/lib/funicular.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/AncientSouls/Funicular/blob/f15e379/src/lib/funicular.ts#L61">ancient-funicular/src/lib/funicular.ts:61</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>data: <a href="_ancient_funicular_src_lib_funicular_.ifuniculareventdata.html" class="tsd-signature-type">IFunicularEventData</a></h5>
+								<h5>instance: <span class="tsd-signature-type">IInstance</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IInstance</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -124,6 +124,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_cursor_src_lib_cursors_manager_.html">"ancient-<wbr>cursor/src/lib/cursors-<wbr>manager"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_funicular_src_lib_executable_funicular_.html">"ancient-<wbr>funicular/src/lib/executable-<wbr>funicular"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_ancient_funicular_src_lib_funicular_.html">"ancient-<wbr>funicular/src/lib/funicular"</a>
@@ -162,16 +165,16 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_ancient_funicular_src_lib_funicular_.ifunicularcallback.html" class="tsd-kind-icon">IFunicular<wbr>Callback</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_funicular_src_lib_funicular_.ifuniculareventdata.html" class="tsd-kind-icon">IFunicular<wbr>Event<wbr>Data</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_funicular_src_lib_funicular_.ifuniculareventlistener.html" class="tsd-kind-icon">IFunicular<wbr>Event<wbr>Listener</a>
+						<a href="_ancient_funicular_src_lib_funicular_.ifunicularclone.html" class="tsd-kind-icon">IFunicular<wbr>Clone</a>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_funicular_src_lib_funicular_.ifuniculareventdata.html" class="tsd-kind-icon">IFunicular<wbr>Event<wbr>Data</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="_ancient_funicular_src_lib_funicular_.ifuniculareventslist.html" class="tsd-kind-icon">IFunicular<wbr>Events<wbr>List</a>
 					</li>
