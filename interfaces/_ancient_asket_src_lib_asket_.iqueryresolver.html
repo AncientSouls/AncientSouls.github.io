@@ -78,34 +78,22 @@
 			<section class="tsd-panel">
 				<h3 class="tsd-before-signature">Callable</h3>
 				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>schema<span class="tsd-signature-symbol">: </span><a href="_ancient_asket_src_lib_asket_.iqueryschema.html" class="tsd-signature-type">IQuerySchema</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, env<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, steps<span class="tsd-signature-symbol">: </span><a href="_ancient_asket_src_lib_asket_.iquerystep.html" class="tsd-signature-type">IQueryStep</a><span class="tsd-signature-symbol">[]</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_ancient_asket_src_lib_asket_.iqueryresult.html" class="tsd-signature-type">IQueryResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>IQueryFlow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_ancient_asket_src_lib_asket_.iqueryflow.html" class="tsd-signature-type">IQueryFlow</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/AncientSouls/Asket/blob/629048e/src/lib/asket.ts#L34">ancient-asket/src/lib/asket.ts:34</a></li>
+								<li>Defined in <a href="https://github.com/AncientSouls/Asket/blob/f9ae0e6/src/lib/asket.ts#L34">ancient-asket/src/lib/asket.ts:34</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>schema: <a href="_ancient_asket_src_lib_asket_.iqueryschema.html" class="tsd-signature-type">IQuerySchema</a></h5>
-							</li>
-							<li>
-								<h5>data: <span class="tsd-signature-type">any</span></h5>
-							</li>
-							<li>
-								<h5>env: <span class="tsd-signature-type">any</span></h5>
-							</li>
-							<li>
-								<h5>steps: <a href="_ancient_asket_src_lib_asket_.iquerystep.html" class="tsd-signature-type">IQueryStep</a><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-							<li>
-								<h5>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<h5>IQueryFlow: <span class="tsd-signature-type">any</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_ancient_asket_src_lib_asket_.iqueryresult.html" class="tsd-signature-type">IQueryResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_ancient_asket_src_lib_asket_.iqueryflow.html" class="tsd-signature-type">IQueryFlow</a><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -168,14 +156,17 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/_ancient_asket_src_lib_asket_.asket.html" class="tsd-kind-icon">Asket</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_ancient_asket_src_lib_asket_.iquery.html" class="tsd-kind-icon">IQuery</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_asket_src_lib_asket_.iqueryfields.html" class="tsd-kind-icon">IQuery<wbr>Fields</a>
+						<a href="_ancient_asket_src_lib_asket_.iqueryasket.html" class="tsd-kind-icon">IQuery<wbr>Asket</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_asket_src_lib_asket_.iqueryfieldslist.html" class="tsd-kind-icon">IQuery<wbr>Fields<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_asket_src_lib_asket_.iqueryflow.html" class="tsd-kind-icon">IQuery<wbr>Flow</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_ancient_asket_src_lib_asket_.iqueryfragments.html" class="tsd-kind-icon">IQuery<wbr>Fragments</a>
@@ -191,16 +182,13 @@
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_asket_src_lib_asket_.iqueryresult.html" class="tsd-kind-icon">IQuery<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_ancient_asket_src_lib_asket_.iqueryschema.html" class="tsd-kind-icon">IQuery<wbr>Schema</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_asket_src_lib_asket_.iquerystep.html" class="tsd-kind-icon">IQuery<wbr>Step</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_ancient_asket_src_lib_asket_.iqueryvariables.html" class="tsd-kind-icon">IQuery<wbr>Variables</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ancient_asket_src_lib_asket_.html#asket" class="tsd-kind-icon">asket</a>
 					</li>
 				</ul>
 			</nav>
