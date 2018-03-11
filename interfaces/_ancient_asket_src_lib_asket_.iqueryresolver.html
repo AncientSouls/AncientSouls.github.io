@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IBundleValue | AncientSouls Documentation</title>
+	<title>IQueryResolver | AncientSouls Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ancient_cursor_src_lib_bundle_.html">&quot;ancient-cursor/src/lib/bundle&quot;</a>
+					<a href="../modules/_ancient_asket_src_lib_asket_.html">&quot;ancient-asket/src/lib/asket&quot;</a>
 				</li>
 				<li>
-					<a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html">IBundleValue</a>
+					<a href="_ancient_asket_src_lib_asket_.iqueryresolver.html">IQueryResolver</a>
 				</li>
 			</ul>
-			<h1>Interface IBundleValue</h1>
+			<h1>Interface IQueryResolver</h1>
 		</div>
 	</div>
 </header>
@@ -71,68 +71,40 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_ancient_cursor_src_lib_bundle_.ibundle.html" class="tsd-signature-type">IBundle</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">IBundleValue</span>
-							</li>
-						</ul>
+						<span class="target">IQueryResolver</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html#path" class="tsd-kind-icon">path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html#value" class="tsd-kind-icon">value</a></li>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>schema<span class="tsd-signature-symbol">: </span><a href="_ancient_asket_src_lib_asket_.iqueryschema.html" class="tsd-signature-type">IQuerySchema</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, env<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, steps<span class="tsd-signature-symbol">: </span><a href="_ancient_asket_src_lib_asket_.iquerystep.html" class="tsd-signature-type">IQueryStep</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_ancient_asket_src_lib_asket_.iqueryresult.html" class="tsd-signature-type">IQueryResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/AncientSouls/Asket/blob/1a3fb4f/src/lib/asket.ts#L34">ancient-asket/src/lib/asket.ts:34</a></li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-					<a name="path" class="tsd-anchor"></a>
-					<h3>path</h3>
-					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <a href="../modules/_ancient_cursor_src_lib_bundle_.html#tbundlepaths" class="tsd-signature-type">TBundlePaths</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_ancient_cursor_src_lib_bundle_.ibundle.html">IBundle</a>.<a href="_ancient_cursor_src_lib_bundle_.ibundle.html#path">path</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/cf0a76d/src/lib/bundle.ts#L5">ancient-cursor/src/lib/bundle.ts:5</a></li>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>schema: <a href="_ancient_asket_src_lib_asket_.iqueryschema.html" class="tsd-signature-type">IQuerySchema</a></h5>
+							</li>
+							<li>
+								<h5>data: <span class="tsd-signature-type">any</span></h5>
+							</li>
+							<li>
+								<h5>env: <span class="tsd-signature-type">any</span></h5>
+							</li>
+							<li>
+								<h5>steps: <a href="_ancient_asket_src_lib_asket_.iquerystep.html" class="tsd-signature-type">IQueryStep</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
 						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_ancient_cursor_src_lib_bundle_.ibundle.html">IBundle</a>.<a href="_ancient_cursor_src_lib_bundle_.ibundle.html#type">type</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/cf0a76d/src/lib/bundle.ts#L4">ancient-cursor/src/lib/bundle.ts:4</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/cf0a76d/src/lib/bundle.ts#L26">ancient-cursor/src/lib/bundle.ts:26</a></li>
-						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_ancient_asket_src_lib_asket_.iqueryresult.html" class="tsd-signature-type">IQueryResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -140,6 +112,9 @@
 				<ul>
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ancient_asket_src_lib_asket_.html">"ancient-<wbr>asket/src/lib/asket"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_channels_src_lib_channel_.html">"ancient-<wbr>channels/src/lib/channel"</a>
@@ -150,7 +125,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_channels_src_lib_create_local_transport_.html">"ancient-<wbr>channels/src/lib/create-<wbr>local-<wbr>transport"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_cursor_src_lib_bundle_.html">"ancient-<wbr>cursor/src/lib/bundle"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -161,9 +136,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_cursor_src_lib_cursors_manager_.html">"ancient-<wbr>cursor/src/lib/cursors-<wbr>manager"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_ancient_funicular_src_lib_executable_funicular_.html">"ancient-<wbr>funicular/src/lib/executable-<wbr>funicular"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_funicular_src_lib_funicular_.html">"ancient-<wbr>funicular/src/lib/funicular"</a>
@@ -190,68 +162,39 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_cursor_src_lib_bundle_.ibundle.html" class="tsd-kind-icon">IBundle</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_ancient_asket_src_lib_asket_.asket.html" class="tsd-kind-icon">Asket</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_cursor_src_lib_bundle_.ibundlechanges.html" class="tsd-kind-icon">IBundle<wbr>Changes</a>
+						<a href="_ancient_asket_src_lib_asket_.iquery.html" class="tsd-kind-icon">IQuery</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_cursor_src_lib_bundle_.ibundleparser.html" class="tsd-kind-icon">IBundle<wbr>Parser</a>
+						<a href="_ancient_asket_src_lib_asket_.iqueryfields.html" class="tsd-kind-icon">IQuery<wbr>Fields</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_cursor_src_lib_bundle_.ibundleparsers.html" class="tsd-kind-icon">IBundle<wbr>Parsers</a>
+						<a href="_ancient_asket_src_lib_asket_.iqueryfragments.html" class="tsd-kind-icon">IQuery<wbr>Fragments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_cursor_src_lib_bundle_.ibundleselector.html" class="tsd-kind-icon">IBundle<wbr>Selector</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_cursor_src_lib_bundle_.ibundlesplice.html" class="tsd-kind-icon">IBundle<wbr>Splice</a>
+						<a href="_ancient_asket_src_lib_asket_.iqueryoptions.html" class="tsd-kind-icon">IQuery<wbr>Options</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html" class="tsd-kind-icon">IBundle<wbr>Value</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-								<a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html#path" class="tsd-kind-icon">path</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-								<a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html#type" class="tsd-kind-icon">type</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_ancient_cursor_src_lib_bundle_.ibundlevalue.html#value" class="tsd-kind-icon">value</a>
-							</li>
-						</ul>
+						<a href="_ancient_asket_src_lib_asket_.iqueryresolver.html" class="tsd-kind-icon">IQuery<wbr>Resolver</a>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#tbundlepath" class="tsd-kind-icon">TBundle<wbr>Path</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_asket_src_lib_asket_.iqueryresult.html" class="tsd-kind-icon">IQuery<wbr>Result</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#tbundlepaths" class="tsd-kind-icon">TBundle<wbr>Paths</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_asket_src_lib_asket_.iqueryschema.html" class="tsd-kind-icon">IQuery<wbr>Schema</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#tbundlepathsstep" class="tsd-kind-icon">TBundle<wbr>Paths<wbr>Step</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_asket_src_lib_asket_.iquerystep.html" class="tsd-kind-icon">IQuery<wbr>Step</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#tbundleselector" class="tsd-kind-icon">TBundle<wbr>Selector</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#get" class="tsd-kind-icon">get</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#getbypath" class="tsd-kind-icon">get<wbr>ByPath</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#prepare" class="tsd-kind-icon">prepare</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#topath" class="tsd-kind-icon">to<wbr>Path</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_cursor_src_lib_bundle_.html#bundleparsers" class="tsd-kind-icon">bundle<wbr>Parsers</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_asket_src_lib_asket_.iqueryvariables.html" class="tsd-kind-icon">IQuery<wbr>Variables</a>
 					</li>
 				</ul>
 			</nav>
