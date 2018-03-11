@@ -18,6 +18,10 @@
 	path = packages/ancient-funicular
 	url = https://github.com/AncientSouls/Funicular.git
 	branch = develop
+[submodule "ancient-asket"]
+	path = packages/ancient-asket
+	url = https://github.com/AncientSouls/Asket.git
+	branch = dev
 [submodule "doc"]
 	path = doc
 	url = https://github.com/AncientSouls/AncientSouls.github.io.git

@@ -5,7 +5,8 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "declaration": true,
-    "outDir": "./"
+    "outDir": "./",
+    "target": "es2017"
   },
   "include": [
     "./src/*/*.ts"
