@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPeerApi | AncientSouls Documentation</title>
+	<title>IStackableBundle | AncientSouls Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ancient_peer_src_lib_peer_.html">&quot;ancient-peer/src/lib/peer&quot;</a>
+					<a href="../modules/_ancient_cursor_src_lib_stackable_cursor_.html">&quot;ancient-cursor/src/lib/stackable-cursor&quot;</a>
 				</li>
 				<li>
-					<a href="_ancient_peer_src_lib_peer_.ipeerapi.html">IPeerApi</a>
+					<a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html">IStackableBundle</a>
 				</li>
 			</ul>
-			<h1>Interface IPeerApi</h1>
+			<h1>Interface IStackableBundle</h1>
 		</div>
 	</div>
 </header>
@@ -71,31 +71,68 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPeerApi</span>
+						<a href="_ancient_cursor_src_lib_bundle_.ibundle.html" class="tsd-signature-type">IBundle</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IStackableBundle</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>sendBundles<span class="tsd-signature-symbol">: </span><a href="_ancient_peer_src_lib_peer_.ipeerapisendbundles.html" class="tsd-signature-type">IPeerApiSendBundles</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ancient_peer_src_lib_peer_.ipeerapicallbacks.html" class="tsd-signature-type">IPeerApiCallbacks</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/AncientSouls/Peer/blob/c6f4176/src/lib/peer.ts#L77">ancient-peer/src/lib/peer.ts:77</a></li>
+			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+				<h3 class="tsd-before-signature">Indexable</h3>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html#indexinstack" class="tsd-kind-icon">index<wbr>InStack</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>sendBundles: <a href="_ancient_peer_src_lib_peer_.ipeerapisendbundles.html" class="tsd-signature-type">IPeerApiSendBundles</a></h5>
-							</li>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="indexinstack" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> index<wbr>InStack</h3>
+					<div class="tsd-signature tsd-kind-icon">index<wbr>InStack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/stackable-cursor.ts#L25">ancient-cursor/src/lib/stackable-cursor.ts:25</a></li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="_ancient_peer_src_lib_peer_.ipeerapicallbacks.html" class="tsd-signature-type">IPeerApiCallbacks</a></h4>
-					</li>
-				</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="path" class="tsd-anchor"></a>
+					<h3>path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <a href="../modules/_ancient_cursor_src_lib_bundle_.html#tbundlepaths" class="tsd-signature-type">TBundlePaths</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ancient_cursor_src_lib_bundle_.ibundle.html">IBundle</a>.<a href="_ancient_cursor_src_lib_bundle_.ibundle.html#path">path</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/bundle.ts#L5">ancient-cursor/src/lib/bundle.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ancient_cursor_src_lib_bundle_.ibundle.html">IBundle</a>.<a href="_ancient_cursor_src_lib_bundle_.ibundle.html#type">type</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/bundle.ts#L4">ancient-cursor/src/lib/bundle.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -128,7 +165,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_cursor_src_lib_cursors_manager_.html">"ancient-<wbr>cursor/src/lib/cursors-<wbr>manager"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_ancient_cursor_src_lib_stackable_cursor_.html">"ancient-<wbr>cursor/src/lib/stackable-<wbr>cursor"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -152,7 +189,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_mixins_src_lib_node_.html">"ancient-<wbr>mixins/src/lib/node"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_peer_src_lib_peer_.html">"ancient-<wbr>peer/src/lib/peer"</a>
 					</li>
 				</ul>
@@ -160,65 +197,34 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/_ancient_peer_src_lib_peer_.peer.html" class="tsd-kind-icon">Peer</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeer.html" class="tsd-kind-icon">IPeer</a>
+						<a href="../classes/_ancient_cursor_src_lib_stackable_cursor_.stackablecursor.html" class="tsd-kind-icon">Stackable<wbr>Cursor</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeerapi.html" class="tsd-kind-icon">IPeer<wbr>Api</a>
+						<a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html" class="tsd-kind-icon">IStackable<wbr>Bundle</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html#indexinstack" class="tsd-kind-icon">index<wbr>InStack</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_ancient_cursor_src_lib_stackable_cursor_.istackablebundle.html#type" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeerapicallbacks.html" class="tsd-kind-icon">IPeer<wbr>Api<wbr>Callbacks</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeerapisendbundles.html" class="tsd-kind-icon">IPeer<wbr>Api<wbr>Send<wbr>Bundles</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeercursor.html" class="tsd-kind-icon">IPeer<wbr>Cursor</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeercursorquery.html" class="tsd-kind-icon">IPeer<wbr>Cursor<wbr>Query</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeereventdata.html" class="tsd-kind-icon">IPeer<wbr>Event<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeereventslist.html" class="tsd-kind-icon">IPeer<wbr>Events<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeerpkg.html" class="tsd-kind-icon">IPeer<wbr>Pkg</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeerquery.html" class="tsd-kind-icon">IPeer<wbr>Query</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeerrelationschannels.html" class="tsd-kind-icon">IPeer<wbr>Relations<wbr>Channels</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_peer_src_lib_peer_.ipeerrelationscursors.html" class="tsd-kind-icon">IPeer<wbr>Relations<wbr>Cursors</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_peer_src_lib_peer_.html#tpeer" class="tsd-kind-icon">TPeer</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_peer_src_lib_peer_.html#tpeerapiquery" class="tsd-kind-icon">TPeer<wbr>Api<wbr>Query</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_peer_src_lib_peer_.html#tpeercursor" class="tsd-kind-icon">TPeer<wbr>Cursor</a>
+						<a href="_ancient_cursor_src_lib_stackable_cursor_.istackablecursor.html" class="tsd-kind-icon">IStackable<wbr>Cursor</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_peer_src_lib_peer_.html#mixedpeer" class="tsd-kind-icon">Mixed<wbr>Peer</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_peer_src_lib_peer_.html#defaultapi" class="tsd-kind-icon">default<wbr>Api</a>
+						<a href="../modules/_ancient_cursor_src_lib_stackable_cursor_.html#mixedstackablecursor" class="tsd-kind-icon">Mixed<wbr>Stackable<wbr>Cursor</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../modules/_ancient_peer_src_lib_peer_.html#mixin" class="tsd-kind-icon">mixin</a>
+						<a href="../modules/_ancient_cursor_src_lib_stackable_cursor_.html#mixin" class="tsd-kind-icon">mixin</a>
 					</li>
 				</ul>
 			</nav>
