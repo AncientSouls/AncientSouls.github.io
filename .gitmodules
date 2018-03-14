@@ -21,8 +21,12 @@
 [submodule "ancient-asket"]
 	path = packages/ancient-asket
 	url = https://github.com/AncientSouls/Asket.git
-	branch = dev
+	branch = develop
 [submodule "doc"]
 	path = doc
 	url = https://github.com/AncientSouls/AncientSouls.github.io.git
 	branch = master
+[submodule "ancient-orient"]
+	path = packages/ancient-orient
+	url = https://github.com/AncientSouls/Orient.git
+	branch = develop
