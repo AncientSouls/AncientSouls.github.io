@@ -26,7 +26,3 @@
 	path = doc
 	url = https://github.com/AncientSouls/AncientSouls.github.io.git
 	branch = master
-[submodule "ancient-orient"]
-	path = packages/ancient-orient
-	url = https://github.com/AncientSouls/Orient.git
-	branch = develop
