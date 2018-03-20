@@ -4,7 +4,7 @@
   "repository": "AncientSouls/AncientSouls.github.io",
   "license": "MIT",
   "scripts": {
-    "dev-init": "git submodule init && git submodule update && (for p in ./packages/*; do (cd \"$p\" && git checkout $B); done) && npm run dev-install && npm run dev-check",
+    "dev-init": "git submodule init && git submodule update && (for p in ./packages/*; do (cd \"$p\" && git checkout $B); done) && (cd doc && git checkout master -f) && npm run dev-install && npm run dev-check",
     "dev-check": "npm run dev-tslint && npm run dev-tsc && npm run dev-test",
     "dev-build": "npm run dev-normalize && npm run dev-check && npm run dev-doc",
     "dev-install": "npm install && npm run dev-install-packages && npm run dev-set-links && npm run dev-use-links",
