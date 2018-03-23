@@ -17,7 +17,7 @@
     "dev-doc": "find ./doc/ ! -name '.git' ! -name 'doc' -exec rm -rf {} + && touch ./doc/.nojekyll && typedoc --readme ./README.md --name \"AncientSouls Documentation\" --module commonjs --out ./doc/ --excludeExternals --exclude \"**/+(node_modules|tests)/**\" --disableOutputCheck --ignoreCompilerErrors --includes includes ./packages",
     "dev-acp-packages": "for p in ./packages/* ; do (cd $p && echo \"$p\" && git add . -A && git commit --quiet -m \"$M\" && git push --quiet --all origin); done",
     "dev-acp-dev": "git add . -A && echo \"./\" && git commit --quiet -m \"$M\" && git push --quiet --all origin",
-    "dev-acp-doc": "(cd doc && echo \"doc\" && git add . -A && git commit --quiet-m \"$M\" && git push --quiet--all origin)",
+    "dev-acp-doc": "(cd doc && echo \"doc\" && git add . -A && git commit --quiet -m \"$M\" && git push --quiet --all origin)",
     "dev-acp": "npm run dev-acp-dev && npm run dev-acp-doc && npm run dev-acp-packages",
     "dev-test": "for p in ./packages/* ; do (cd \"$p\" && echo \"$p\" && npm run test); done"
   },
