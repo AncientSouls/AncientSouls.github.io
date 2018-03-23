@@ -114,9 +114,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#emitter" class="tsd-kind-icon">emitter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#generateid" class="tsd-kind-icon">generate<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#isdestroyed" class="tsd-kind-icon">is<wbr>Destroyed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#query" class="tsd-kind-icon">query</a></li>
@@ -127,8 +125,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#apply" class="tsd-kind-icon">apply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#exec" class="tsd-kind-icon">exec</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#generateid" class="tsd-kind-icon">generate<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#off" class="tsd-kind-icon">off</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported"><a href="_ancient_cursor_src_lib_cursor_.icursor.html#on" class="tsd-kind-icon">on</a></li>
@@ -174,35 +174,9 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/cursor.ts#L70">ancient-cursor/src/lib/cursor.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/b93ad7c/src/lib/cursor.ts#L70">ancient-cursor/src/lib/cursor.ts:70</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-					<a name="destroy" class="tsd-anchor"></a>
-					<h3>destroy</h3>
-					<div class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from INode.destroy</p>
-						<ul>
-							<li>Defined in ancient-channels/node_modules/ancient-mixins/lib/node.d.ts:15</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="emitter" class="tsd-anchor"></a>
@@ -214,32 +188,6 @@
 							<li>Defined in ancient-channels/node_modules/ancient-mixins/lib/events.d.ts:5</li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-					<a name="generateid" class="tsd-anchor"></a>
-					<h3>generate<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">generate<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from INode.generateId</p>
-						<ul>
-							<li>Defined in ancient-channels/node_modules/ancient-mixins/lib/node.d.ts:13</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="id" class="tsd-anchor"></a>
@@ -269,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/cursor.ts#L69">ancient-cursor/src/lib/cursor.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/b93ad7c/src/lib/cursor.ts#L69">ancient-cursor/src/lib/cursor.ts:69</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">query<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/cursor.ts#L68">ancient-cursor/src/lib/cursor.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/b93ad7c/src/lib/cursor.ts#L68">ancient-cursor/src/lib/cursor.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/cursor.ts#L72">ancient-cursor/src/lib/cursor.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/b93ad7c/src/lib/cursor.ts#L72">ancient-cursor/src/lib/cursor.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -309,11 +257,30 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="destroy" class="tsd-anchor"></a>
+					<h3>destroy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from INode.destroy</p>
+								<p>Overrides IEvents.destroy</p>
+								<ul>
+									<li>Defined in ancient-channels/node_modules/ancient-mixins/lib/node.d.ts:15</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 					<a name="emit" class="tsd-anchor"></a>
 					<h3>emit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">emit&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IEventsList[IE]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">emit&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IEventsList[IE]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -332,7 +299,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>data: <span class="tsd-signature-type">IEventsList[IE]</span></h5>
@@ -352,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/cursor.ts#L71">ancient-cursor/src/lib/cursor.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/b93ad7c/src/lib/cursor.ts#L71">ancient-cursor/src/lib/cursor.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -368,6 +335,24 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="generateid" class="tsd-anchor"></a>
+					<h3>generate<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from INode.generateId</p>
+								<ul>
+									<li>Defined in ancient-channels/node_modules/ancient-mixins/lib/node.d.ts:13</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
@@ -378,7 +363,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/cursor.ts#L74">ancient-cursor/src/lib/cursor.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/b93ad7c/src/lib/cursor.ts#L74">ancient-cursor/src/lib/cursor.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -395,7 +380,7 @@
 					<a name="off" class="tsd-anchor"></a>
 					<h3>off</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">off&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">off&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -414,7 +399,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">function</span></h5>
@@ -446,7 +431,7 @@
 					<a name="on" class="tsd-anchor"></a>
 					<h3>on</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">on&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -465,7 +450,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">function</span></h5>
@@ -497,7 +482,7 @@
 					<a name="once" class="tsd-anchor"></a>
 					<h3>once</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">once&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">once&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -516,7 +501,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">function</span></h5>
@@ -554,7 +539,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/fc0e385/src/lib/cursor.ts#L73">ancient-cursor/src/lib/cursor.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Cursor/blob/b93ad7c/src/lib/cursor.ts#L73">ancient-cursor/src/lib/cursor.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -615,6 +600,9 @@
 						<a href="../modules/_ancient_mixins_src_lib_events_.html">"ancient-<wbr>mixins/src/lib/events"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_mixins_src_lib_list_.html">"ancient-<wbr>mixins/src/lib/list"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_mixins_src_lib_manager_.html">"ancient-<wbr>mixins/src/lib/manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -625,6 +613,12 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_peer_src_lib_peer_.html">"ancient-<wbr>peer/src/lib/peer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_tracker_src_lib_asketic_tracker_.html">"ancient-<wbr>tracker/src/lib/asketic-<wbr>tracker"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_tracker_src_lib_tracker_.html">"ancient-<wbr>tracker/src/lib/tracker"</a>
 					</li>
 				</ul>
 			</nav>
@@ -645,13 +639,7 @@
 								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#destroy" class="tsd-kind-icon">destroy</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#emitter" class="tsd-kind-icon">emitter</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#generateid" class="tsd-kind-icon">generate<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#id" class="tsd-kind-icon">id</a>
@@ -668,11 +656,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#apply" class="tsd-kind-icon">apply</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#destroy" class="tsd-kind-icon">destroy</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#exec" class="tsd-kind-icon">exec</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#generateid" class="tsd-kind-icon">generate<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_ancient_cursor_src_lib_cursor_.icursor.html#get" class="tsd-kind-icon">get</a>
