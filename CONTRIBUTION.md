@@ -34,7 +34,10 @@ npm run dev-normalize # copies the same .travis and sh packages to all packages
 npm run dev-doc # regenerate ./doc
 
 # Not safe, commits
-M="message" npm run dev-all-acp # if has changes, add, commit and push all with message into all repositories includes root dev and doc repository
+M="message" npm run dev-acp # add, commit, push all
+M="message" npm run dev-acp-dev # add, commit, push dev repo
+M="message" npm run dev-acp-doc # add, commit, push doc repo
+M="message" npm run dev-acp-packages # add, commit, push all packages
 
 # Tips and helpers
 
