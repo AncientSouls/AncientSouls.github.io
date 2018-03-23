@@ -39,6 +39,11 @@ M="message" npm run dev-acp-dev # add, commit, push dev repo
 M="message" npm run dev-acp-doc # add, commit, push doc repo
 M="message" npm run dev-acp-packages # add, commit, push all packages
 
+# Publishing
+# Only if all changes commited with acp, need to bump version.
+npm run dev-np # (npm run np) for each package
+npm run np # np package without npm publishng, just bump package.json version, commit and push it
+
 # Tips and helpers
 
 # useful cicle for apply sh to packages

@@ -19,7 +19,8 @@
     "dev-acp-dev": "git add . -A && echo \"./\" && git commit --quiet -m \"$M\" && git push --quiet --all origin",
     "dev-acp-doc": "(cd doc && echo \"doc\" && git add . -A && git commit --quiet -m \"$M\" && git push --quiet --all origin)",
     "dev-acp": "npm run dev-acp-dev && npm run dev-acp-doc && npm run dev-acp-packages",
-    "dev-test": "for p in ./packages/* ; do (cd \"$p\" && echo \"$p\" && npm run test); done"
+    "dev-test": "for p in ./packages/* ; do (cd \"$p\" && echo \"$p\" && npm run test); done",
+    "dev-np": "for p in ./packages/* ; do (cd $p && npm run np); done"
   },
   "devDependencies": {
     "typedoc": "^0.10.0",
