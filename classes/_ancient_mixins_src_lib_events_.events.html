@@ -99,6 +99,7 @@
 						<section class="tsd-index-section tsd-is-inherited tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported"><a href="_ancient_mixins_src_lib_events_.events.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported"><a href="_ancient_mixins_src_lib_events_.events.html#emitter" class="tsd-kind-icon">emitter</a></li>
 							</ul>
 						</section>
@@ -117,15 +118,51 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
+					<a name="destroy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> destroy</h3>
+					<div class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html">IEvents</a>.<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html#destroy">destroy</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L42">ancient-mixins/src/lib/events.ts:42</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Delte all linstening events.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
 					<a name="emitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> emitter</h3>
 					<div class="tsd-signature tsd-kind-icon">emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html">IEvents</a>.<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html#emitter">emitter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/95ef151/src/lib/events.ts#L9">ancient-mixins/src/lib/events.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L13">ancient-mixins/src/lib/events.ts:13</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Native nodejs EventEmitter.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-not-exported">
@@ -134,16 +171,21 @@
 					<a name="emit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> emit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">emit&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IEventsList[IE]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">emit&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IEventsList[IE]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html">IEvents</a>.<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/95ef151/src/lib/events.ts#L11">ancient-mixins/src/lib/events.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L18">ancient-mixins/src/lib/events.ts:18</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Emit event with custom data and <code>&quot;emit&quot;</code> event with data <code>{ eventName: string, data: any }</code></p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -153,7 +195,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>data: <span class="tsd-signature-type">IEventsList[IE]</span></h5>
@@ -167,16 +209,21 @@
 					<a name="off" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> off</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">off&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">off&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html">IEvents</a>.<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/95ef151/src/lib/events.ts#L20">ancient-mixins/src/lib/events.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L36">ancient-mixins/src/lib/events.ts:36</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes the specified listener from the listener array for the event named eventName.</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -186,7 +233,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">function</span></h5>
@@ -218,16 +265,21 @@
 					<a name="on" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> on</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">on&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html">IEvents</a>.<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/95ef151/src/lib/events.ts#L14">ancient-mixins/src/lib/events.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L24">ancient-mixins/src/lib/events.ts:24</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds the listener function to the end of the listeners array for the event named eventName.</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -237,7 +289,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">function</span></h5>
@@ -269,16 +321,21 @@
 					<a name="once" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> once</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">once&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">once&lt;IE&gt;<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IE</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html">IEvents</a>.<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/95ef151/src/lib/events.ts#L17">ancient-mixins/src/lib/events.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L30">ancient-mixins/src/lib/events.ts:30</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a one-time listener function for the event named eventName.</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -288,7 +345,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<h5>eventName: <span class="tsd-signature-type">IE</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">function</span></h5>
@@ -364,6 +421,9 @@
 						<a href="../modules/_ancient_mixins_src_lib_events_.html">"ancient-<wbr>mixins/src/lib/events"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_mixins_src_lib_list_.html">"ancient-<wbr>mixins/src/lib/list"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_mixins_src_lib_manager_.html">"ancient-<wbr>mixins/src/lib/manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -375,6 +435,18 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_peer_src_lib_peer_.html">"ancient-<wbr>peer/src/lib/peer"</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_tracker_src_lib_asketic_tracker_.html">"ancient-<wbr>tracker/src/lib/asketic-<wbr>tracker"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_tracker_src_lib_bundles_.html">"ancient-<wbr>tracker/src/lib/bundles"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_tracker_src_lib_tracker_.html">"ancient-<wbr>tracker/src/lib/tracker"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ancient_tracker_src_lib_tracking_.html">"ancient-<wbr>tracker/src/lib/tracking"</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -384,6 +456,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="_ancient_mixins_src_lib_events_.events.html" class="tsd-kind-icon">Events</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
+								<a href="_ancient_mixins_src_lib_events_.events.html#destroy" class="tsd-kind-icon">destroy</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
 								<a href="_ancient_mixins_src_lib_events_.events.html#emitter" class="tsd-kind-icon">emitter</a>
 							</li>
@@ -405,6 +480,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html" class="tsd-kind-icon">IEvents</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_ancient_mixins_src_lib_events_.ieventsemitdata.html" class="tsd-kind-icon">IEvents<wbr>Emit<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_ancient_mixins_src_lib_events_.ieventslist.html" class="tsd-kind-icon">IEvents<wbr>List</a>

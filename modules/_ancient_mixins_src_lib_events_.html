@@ -78,6 +78,7 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html" class="tsd-kind-icon">IEvents</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_ancient_mixins_src_lib_events_.ieventsemitdata.html" class="tsd-kind-icon">IEvents<wbr>Emit<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_ancient_mixins_src_lib_events_.ieventslist.html" class="tsd-kind-icon">IEvents<wbr>List</a></li>
 							</ul>
 						</section>
@@ -104,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">Mixed<wbr>Events<span class="tsd-signature-symbol">:</span> <a href="_ancient_mixins_src_lib_mixins_.html#tclass" class="tsd-signature-type">TClass</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html" class="tsd-signature-type">IEvents</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_ancient_mixins_src_lib_events_.ieventslist.html" class="tsd-signature-type">IEventsList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;mixin(class {})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/95ef151/src/lib/events.ts#L59">ancient-mixins/src/lib/events.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L101">ancient-mixins/src/lib/events.ts:101</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,9 +122,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/95ef151/src/lib/events.ts#L30">ancient-mixins/src/lib/events.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Mixins/blob/8b89767/src/lib/events.ts#L67">ancient-mixins/src/lib/events.ts:67</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Mixin your class with Events functionality.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="lang-typescript">
+<span class="hljs-keyword">import</span> { mixin, IEventsList, IEvents } <span class="hljs-keyword">from</span> <span class="hljs-string">'ancient-mixins/lib/events'</span>;
+<span class="hljs-keyword">import</span> { TClass } <span class="hljs-keyword">from</span> <span class="hljs-string">'ancient-mixins/lib/mixins'</span>;
+<span class="hljs-keyword">const</span> MyEvents: TClass&lt;IEvents&lt;IEventsList&gt;&gt; = mixin(<span class="hljs-keyword">class</span> {});
+</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -188,6 +203,9 @@
 						<a href="_ancient_mixins_src_lib_events_.html">"ancient-<wbr>mixins/src/lib/events"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_ancient_mixins_src_lib_list_.html">"ancient-<wbr>mixins/src/lib/list"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_ancient_mixins_src_lib_manager_.html">"ancient-<wbr>mixins/src/lib/manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -199,6 +217,18 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_ancient_peer_src_lib_peer_.html">"ancient-<wbr>peer/src/lib/peer"</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_ancient_tracker_src_lib_asketic_tracker_.html">"ancient-<wbr>tracker/src/lib/asketic-<wbr>tracker"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_ancient_tracker_src_lib_bundles_.html">"ancient-<wbr>tracker/src/lib/bundles"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_ancient_tracker_src_lib_tracker_.html">"ancient-<wbr>tracker/src/lib/tracker"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_ancient_tracker_src_lib_tracking_.html">"ancient-<wbr>tracker/src/lib/tracking"</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -208,6 +238,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../interfaces/_ancient_mixins_src_lib_events_.ievents.html" class="tsd-kind-icon">IEvents</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_ancient_mixins_src_lib_events_.ieventsemitdata.html" class="tsd-kind-icon">IEvents<wbr>Emit<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_ancient_mixins_src_lib_events_.ieventslist.html" class="tsd-kind-icon">IEvents<wbr>List</a>
