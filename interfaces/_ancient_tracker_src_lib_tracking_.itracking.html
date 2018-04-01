@@ -60,7 +60,7 @@
 					<a href="_ancient_tracker_src_lib_tracking_.itracking.html">ITracking</a>
 				</li>
 			</ul>
-			<h1>Interface ITracking&lt;IEventsList&gt;</h1>
+			<h1>Interface ITracking&lt;ITE, IEventsList&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,10 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>IEventsList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">INodeEventsList</span></h4>
+						<h4>ITE<span class="tsd-signature-symbol">: </span><a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-signature-type">ITrackingItem</a></h4>
+					</li>
+					<li>
+						<h4>IEventsList<span class="tsd-signature-symbol">: </span><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html" class="tsd-signature-type">ITrackingEventsList</a><span class="tsd-signature-symbol">&lt;</span><a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-signature-type">ITrackingItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -201,12 +204,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="trackings" class="tsd-anchor"></a>
 					<h3>trackings</h3>
-					<div class="tsd-signature tsd-kind-icon">trackings<span class="tsd-signature-symbol">:</span> <a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-signature-type">ITrackingItem</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">trackings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/76f5b27/src/lib/tracking.ts#L34">ancient-tracker/src/lib/tracking.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L37">ancient-tracker/src/lib/tracking.ts:37</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">ITE</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
@@ -273,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/76f5b27/src/lib/tracking.ts#L31">ancient-tracker/src/lib/tracking.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L34">ancient-tracker/src/lib/tracking.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -461,19 +472,19 @@
 					<a name="override" class="tsd-anchor"></a>
 					<h3>override</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">override<span class="tsd-signature-symbol">(</span>tracking<span class="tsd-signature-symbol">: </span><a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-signature-type">ITrackingItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">override<span class="tsd-signature-symbol">(</span>tracking<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ITE</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/76f5b27/src/lib/tracking.ts#L37">ancient-tracker/src/lib/tracking.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L40">ancient-tracker/src/lib/tracking.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>tracking: <a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-signature-type">ITrackingItem</a></h5>
+									<h5>tracking: <span class="tsd-signature-type">ITE</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -490,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/76f5b27/src/lib/tracking.ts#L32">ancient-tracker/src/lib/tracking.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L35">ancient-tracker/src/lib/tracking.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -522,7 +533,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/76f5b27/src/lib/tracking.ts#L28">ancient-tracker/src/lib/tracking.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L31">ancient-tracker/src/lib/tracking.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -539,7 +550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/76f5b27/src/lib/tracking.ts#L29">ancient-tracker/src/lib/tracking.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L32">ancient-tracker/src/lib/tracking.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -556,7 +567,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/76f5b27/src/lib/tracking.ts#L36">ancient-tracker/src/lib/tracking.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L39">ancient-tracker/src/lib/tracking.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -710,6 +721,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html" class="tsd-kind-icon">ITracking<wbr>Events<wbr>List</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-kind-icon">ITracking<wbr>Item</a>
 					</li>

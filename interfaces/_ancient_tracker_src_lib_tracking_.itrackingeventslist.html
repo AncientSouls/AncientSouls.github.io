@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ITrackerStop | AncientSouls Documentation</title>
+	<title>ITrackingEventsList | AncientSouls Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,42 +54,137 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ancient_tracker_src_lib_tracker_.html">&quot;ancient-tracker/src/lib/tracker&quot;</a>
+					<a href="../modules/_ancient_tracker_src_lib_tracking_.html">&quot;ancient-tracker/src/lib/tracking&quot;</a>
 				</li>
 				<li>
-					<a href="_ancient_tracker_src_lib_tracker_.itrackerstop.html">ITrackerStop</a>
+					<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html">ITrackingEventsList</a>
 				</li>
 			</ul>
-			<h1>Interface ITrackerStop</h1>
+			<h1>Interface ITrackingEventsList&lt;ITE&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>ITE<span class="tsd-signature-symbol">: </span><a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-signature-type">ITrackingItem</a></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ITrackerStop</span>
+						<span class="tsd-signature-type">INodeEventsList</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ITrackingEventsList</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracker.ts#L38">ancient-tracker/src/lib/tracker.ts:38</a></li>
+			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+				<h3 class="tsd-before-signature">Indexable</h3>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#destroyed" class="tsd-kind-icon">destroyed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#overrided" class="tsd-kind-icon">overrided</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#started" class="tsd-kind-icon">started</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#stopped" class="tsd-kind-icon">stopped</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#tracked" class="tsd-kind-icon">tracked</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#untracked" class="tsd-kind-icon">untracked</a></li>
 							</ul>
-						</aside>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="destroyed" class="tsd-anchor"></a>
+					<h3>destroyed</h3>
+					<div class="tsd-signature tsd-kind-icon">destroyed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">INodeEventData</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from INodeEventsList.destroyed</p>
+						<ul>
+							<li>Defined in ancient-channels/node_modules/ancient-mixins/lib/node.d.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="emit" class="tsd-anchor"></a>
+					<h3>emit</h3>
+					<div class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IEventsEmitData</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from IEventsList.emit</p>
+						<ul>
+							<li>Defined in ancient-channels/node_modules/ancient-mixins/lib/events.d.ts:19</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="overrided" class="tsd-anchor"></a>
+					<h3>overrided</h3>
+					<div class="tsd-signature tsd-kind-icon">overrided<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ITE</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L46">ancient-tracker/src/lib/tracking.ts:46</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="started" class="tsd-anchor"></a>
+					<h3>started</h3>
+					<div class="tsd-signature tsd-kind-icon">started<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ITE</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L47">ancient-tracker/src/lib/tracking.ts:47</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="stopped" class="tsd-anchor"></a>
+					<h3>stopped</h3>
+					<div class="tsd-signature tsd-kind-icon">stopped<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ITE</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L48">ancient-tracker/src/lib/tracking.ts:48</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="tracked" class="tsd-anchor"></a>
+					<h3>tracked</h3>
+					<div class="tsd-signature tsd-kind-icon">tracked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ITE</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L44">ancient-tracker/src/lib/tracking.ts:44</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="untracked" class="tsd-anchor"></a>
+					<h3>untracked</h3>
+					<div class="tsd-signature tsd-kind-icon">untracked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ITE</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AncientSouls/Tracker/blob/0fc82ad/src/lib/tracking.ts#L45">ancient-tracker/src/lib/tracking.ts:45</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -158,10 +253,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_tracker_src_lib_bundles_.html">"ancient-<wbr>tracker/src/lib/bundles"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_ancient_tracker_src_lib_tracker_.html">"ancient-<wbr>tracker/src/lib/tracker"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_ancient_tracker_src_lib_tracking_.html">"ancient-<wbr>tracker/src/lib/tracking"</a>
 					</li>
 				</ul>
@@ -169,38 +264,52 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/_ancient_tracker_src_lib_tracker_.tracker.html" class="tsd-kind-icon">Tracker</a>
+						<a href="../classes/_ancient_tracker_src_lib_tracking_.tracking.html" class="tsd-kind-icon">Tracking</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="_ancient_tracker_src_lib_tracker_.itracker.html" class="tsd-kind-icon">ITracker</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_tracker_src_lib_tracker_.itrackereventdata.html" class="tsd-kind-icon">ITracker<wbr>Event<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_tracker_src_lib_tracker_.itrackereventslist.html" class="tsd-kind-icon">ITracker<wbr>Events<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_tracker_src_lib_tracker_.itrackeritem.html" class="tsd-kind-icon">ITracker<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_tracker_src_lib_tracker_.itrackerstart.html" class="tsd-kind-icon">ITracker<wbr>Start</a>
+						<a href="_ancient_tracker_src_lib_tracking_.itracking.html" class="tsd-kind-icon">ITracking</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_ancient_tracker_src_lib_tracker_.itrackerstop.html" class="tsd-kind-icon">ITracker<wbr>Stop</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html" class="tsd-kind-icon">ITracking<wbr>Events<wbr>List</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#destroyed" class="tsd-kind-icon">destroyed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#overrided" class="tsd-kind-icon">overrided</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#started" class="tsd-kind-icon">started</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#stopped" class="tsd-kind-icon">stopped</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#tracked" class="tsd-kind-icon">tracked</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_ancient_tracker_src_lib_tracking_.itrackingeventslist.html#untracked" class="tsd-kind-icon">untracked</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ancient_tracker_src_lib_tracking_.itrackingitem.html" class="tsd-kind-icon">ITracking<wbr>Item</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_tracker_src_lib_tracker_.html#ttracker" class="tsd-kind-icon">TTracker</a>
+						<a href="../modules/_ancient_tracker_src_lib_tracking_.html#ttracking" class="tsd-kind-icon">TTracking</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_ancient_tracker_src_lib_tracker_.html#mixedtracker" class="tsd-kind-icon">Mixed<wbr>Tracker</a>
+						<a href="../modules/_ancient_tracker_src_lib_tracking_.html#mixedtracking" class="tsd-kind-icon">Mixed<wbr>Tracking</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../modules/_ancient_tracker_src_lib_tracker_.html#mixin" class="tsd-kind-icon">mixin</a>
+						<a href="../modules/_ancient_tracker_src_lib_tracking_.html#mixin" class="tsd-kind-icon">mixin</a>
 					</li>
 				</ul>
 			</nav>
