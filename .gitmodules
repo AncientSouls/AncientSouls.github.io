@@ -34,3 +34,7 @@
 	path = packages/ancient-babilon
 	url = https://github.com/AncientSouls/Babilon.git
 	branch = develop
+[submodule "packages/ancient-postgresql"]
+	path = packages/ancient-postgresql
+	url = https://github.com/AncientSouls/PostgreSQL.git
+	branch = develop
