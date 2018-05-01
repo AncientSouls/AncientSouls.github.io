@@ -30,3 +30,7 @@
 	path = packages/ancient-tracker
 	url = https://github.com/AncientSouls/Tracker.git
 	branch = develop
+[submodule "packages/ancient-babilon"]
+	path = packages/ancient-babilon
+	url = https://github.com/AncientSouls/Babilon.git
+	branch = develop

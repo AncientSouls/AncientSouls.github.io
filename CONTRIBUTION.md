@@ -9,9 +9,13 @@
 
 We use default git-flow branch names.
 
-- `master` only for pull requests commits equal with release one version, accepts changes only from `release` branch
-- `release` for prepare package to publish (package.json version changes, merge from `master` and from `develop`)
+- `master` only for pull requests commits equal with release one version, accepts changes only from `develop` branch
 - `develop` for for hot development and gettings pull from other branches
+
+## Visual Studio Code
+
+- [x] Support for nodejs debugger
+- [x] Support for [Mocha sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar)
 
 ## Simple sequence
 
@@ -55,5 +59,4 @@ npm run tsc # compile ./src/lib and ./src/tests to ./lib and ./tests
 npm run test # run tests only for current package
 npm run tslint # run tslint only for current package
 npm run dev-test # clone dev env into ./.dev directory, and dev-init it but relink current package for use it for other packages (dev env clone all packages last dev branch versions for test)
-npm run dev-link # use npm link for needed to this package ancient-* dependencies
 ```
